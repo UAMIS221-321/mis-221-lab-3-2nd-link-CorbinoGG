@@ -47,13 +47,13 @@ class Program{
     static string GetGameRecommendation(string stadium){
         switch(stadium){
             case "Neyland Stadium":
-                return "vs Kent State";
+                return "Tennessee vs Kent State";
             case "Jordan-Hare Stadium":
-                return "vs Kentucky";
+                return "Auburn vs Kentucky";
             case "Tiger Stadium":
-                return "vs Alabama";
+                return "LSU vs Alabama";
             case "Saban Field at Bryant-Denny Stadium":
-                return "vs Auburn";
+                return "Alabama vs Auburn";
             default:
                 return "No game scheduled";
             
