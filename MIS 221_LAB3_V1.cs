@@ -9,9 +9,9 @@ class Program{
                 Exit();
                 break;
             }
-            string stadium = GetStadiumRecommendations(enjoymentLevel);
+            string stadium = GetStadiumRecommendation(enjoymentLevel);
             if(stadium != ""){
-                string game = GetGameRecommendations(stadium);
+                string game = GetGameRecommendation(stadium);
                 DisplayStadiumDetails(stadium, game);
             }
         }
@@ -23,11 +23,11 @@ class Program{
     }
 
     static string GetEnjoymentLevel(){
-        System.Console.WriteLine("Please select your preferred enjoyment level:\nBoring\nAverage\nFun\nEpic\n\nEnter exit to close\n");
+        System.Console.WriteLine("Please select your preferred enjoyment level:\nBoring\nAverage\nFun\nEpic\n\nEnter 'Exit' to close\n");
         return (Console.ReadLine());
     }
 
-    static string GetStadiumRecommendations(string enjoymentLevel){
+    static string GetStadiumRecommendation(string enjoymentLevel){
         switch(enjoymentLevel){
             case "boring":
                 return "Neyland Stadium";
@@ -44,7 +44,7 @@ class Program{
         }
     }
 
-    static string GetGameRecommendations(string stadium){
+    static string GetGameRecommendation(string stadium){
         switch(stadium){
             case "Neyland Stadium":
                 return "vs Kent State";
